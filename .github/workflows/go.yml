@@ -24,6 +24,9 @@ jobs:
     - name: Build-DB
       run: docker-compose build
       
+    - name: Install knex
+      run: npm install knex
+      
     - name: Create-DB
       run: npx knex migrate:latest
       
