@@ -31,7 +31,7 @@ jobs:
       run: npm install knex
       
     - name: Create-DB
-      run: npm knex migrate:latest
+      run: npx knex migrate:latest
       
     - name: Test
       run: go test -v .env.test
